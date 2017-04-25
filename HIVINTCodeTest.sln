@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIVINTCodeTest", "HIVINTCodeTest\HIVINTCodeTest.csproj", "{A2810FBF-0DF3-4CF8-A1FF-C410F768CC91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIVINTCodeTest.Tests", "HIVINTCodeTest.Tests\HIVINTCodeTest.Tests.csproj", "{C33FE65F-D86B-4963-8E4B-E17851891112}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{A2810FBF-0DF3-4CF8-A1FF-C410F768CC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2810FBF-0DF3-4CF8-A1FF-C410F768CC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2810FBF-0DF3-4CF8-A1FF-C410F768CC91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C33FE65F-D86B-4963-8E4B-E17851891112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C33FE65F-D86B-4963-8E4B-E17851891112}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C33FE65F-D86B-4963-8E4B-E17851891112}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C33FE65F-D86B-4963-8E4B-E17851891112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
