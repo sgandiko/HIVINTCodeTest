@@ -31,6 +31,12 @@ Code implementation is done in the below mentioned file.
 
 Details: The response which I have got from the above endpoint, I will pass it to the PUT request. Iterate each SubDomain object in the list and find the respective IPAddress of the hostname and update the list. Add the updated list to the response.
 
+UI implentation:
+
+..\HIVINTCodeTest\HIVINTCodeTest\Index.hmtl 
+
+I have developed the frontend application using HTML5, Bootstrap, Angular, JSON and Ajax.
+
 Limitations:
 
 1) Since, I have used free key, I can read only upto 10 pages from the search result. It has daily limit of the 20 transactions.
