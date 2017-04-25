@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css">
+    <style>
+         #divpadding{
+            
+            padding-top: 100px;
+            padding-left: 50px;
+            
+        }
+
+        
+    </style>
+</head>
+<body ng-app="myApp">
+
+    <div class="container" id="divpadding" ng-controller="myCtrl">
+       
+        <div class="row">
+            <div class="col-sm-4">
+                <input type="text" class="form-control col-sm-3" placeholder="domain e.g. yahoo.com" ng-model="inputdomain"  required>
+            </div>
+            <div class="col-sm-4">
+                <buton type="submit" class="btn btn-info active" ng-click="getsubdomains()">Get Sub Domains</buton>
+                <button type="button" class="btn btn-info active" ng-click="findAllIPAddresses()">Get IP Addresses</button>
+            </div>
+              
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div id="errorblock" class="alert alert-warning fade in" ng-hide="errormsg == ''" >
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>Exception!</strong> {{errormsg}}
+        </div>
+
+        <div class="row" ng-hide="subdomains.length == 0">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover" style="width:800px">
+                        <tr>
+                            <td>Host Name</td>
+                            <th>Ip Addresses</th>
+                        </tr>
+                        <tr data-ng-repeat="subdomain in subdomains">
+                            <td><strong >{{ subdomain.hostName }}</strong></td>
+                            <td>
+                                <p>{{ subdomain.ipaddress}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+        
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/myApp.js"></script>
+    
+</body>
+</html>
